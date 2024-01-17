@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/imgaes/logo.png" type="image/x-icon">
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- FontAwsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- remixefont -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <title>Tenderely</title>
+
+    <style>
+        .nav-pills .nav-link.active {
+            background-color: transparent;
+        }
+
+        .border-0 {
+            border: none !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow">
+        <div class="container">
+            <a class="navbar-brand mb-2 mb-lg-0" href="#">
+                <img src="assets/imgaes/logo.png" class="w-50" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <!-- Replace with your chat icon SVG or image -->
+                            <div>
+                                <img src="assets/imgaes/Group 365.png" class="w-auto" alt="">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <div>
+                                <img src="assets/imgaes/Group 364.png" class="w-auto" alt="">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link pt-0" href="#">
+                            <div class="mt-0">
+                                <a class="btn border border-rad w-max focus-none outline-none d-flex dropdown-toggle"
+                                    href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <div class="my-auto me-3">
+                                        <img src="assets/imgaes/align-justify.png" class="w-auto" alt="">
+                                    </div>
+                                    <div class="my-auto">
+                                        <img src="assets/imgaes/Group 366.png" class="w-auto" alt="">
+                                    </div>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                            <!-- Button to trigger first modal -->
+                            <!-- <button class="my-btn" data-bs-toggle="modal" data-bs-target="#firstModal">Sign In</button> -->
+
+                            <!-- First Modal -->
+                            <div class="modal fade" id="firstModal" tabindex="-1" aria-labelledby="firstModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="fw-bold text-black" id="firstModalLabel">Welcome to Tenderely
+                                            </h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="d-flex justify-content-between">
+                                                <div>
+                                                    <img src="assets/imgaes/logo-circle.png" class="w-auto h-auto"
+                                                        alt="">
+                                                </div>
+                                                <div>
+                                                    <button class="btn my-btn-2" data-bs-toggle="modal"
+                                                        data-bs-target="#secondModal">Sign In</button>
+                                                </div>
+                                            </div>
+                                            <div class="container">
+                                                <div class="text-center">
+                                                    <h2 class="mb-3 fw-bold">Join Tenderely</h2>
+                                                    <p>Create an account and discover thousands of jobs opportunities in
+                                                        every field, experience house rental , vehicle equipment
+                                                        services
+                                                        and more unique and exciting features at one platform.
+                                                    </p>
+                                                    <div class="mt-5">
+                                                        <button
+                                                            class="btn w-100 my-btn-black text-black fw-700 mb-3"><img
+                                                                src="assets/imgaes/apple.png" class="w-auto" alt="">
+                                                            Sign up
+                                                            with Apple</button>
+                                                        <button
+                                                            class="btn w-100 my-facebook-btn text-white fw-700 mb-3"><img
+                                                                src="assets/imgaes/facebook.png" class="w-auto" alt="">
+                                                            Sign up
+                                                            with Facebook</button>
+                                                        <button class="btn w-100 my-btn-2 fw-700 mb-3"><img
+                                                                src="assets/imgaes/google.png" class="w-auto" alt="">
+                                                            Sign up
+                                                            with Google</button>
+                                                        <button
+                                                            class="btn w-100 my-btn-blue text-white fw-700 mb-3"><img
+                                                                src="assets/imgaes/email.png" class="w-auto" alt="">
+                                                            Sign up
+                                                            with Email</button>
+                                                    </div>
+                                                    <div class="text-end">
+                                                        <button
+                                                            class="btn outline-none text-primary text-decoration-underline"
+                                                            data-bs-toggle="modal" data-bs-target="#thirdModal">Register
+                                                            an Account ?</button>
+                                                    </div>
+                                                    <p class="mt-4">By joining , you agree’s to Tenderely <a href=""
+                                                            class="text-decoration-underline">Terms of service</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Second Modal -->
+                            <div class="modal fade" id="secondModal" tabindex="-1" aria-labelledby="secondModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="fw-bold text-black" id="firstModalLabel">Welcome to Tenderely
+                                            </h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="d-flex justify-content-between">
+                                                <div>
+                                                    <img src="assets/imgaes/logo-circle.png" class="w-auto h-auto"
+                                                        alt="">
+                                                </div>
+                                                <div>
+                                                    <button class="btn my-btn-2" data-bs-toggle="modal"
+                                                        data-bs-target="#firstModal">Sign up</button>
+                                                </div>
+                                            </div>
+                                            <div class="container">
+                                                <div class="text-center">
+                                                    <h2 class="mb-3 fw-bold">Continue to Login</h2>
+                                                    <p>Access your account by entering your credentials.</p>
+                                                </div>
+                                                <div class="mt-5">
+                                                    <div class="mb-3">
+                                                        <label for="#email" class="mb-2 text-black fw-700">Email
+                                                            Address</label>
+                                                        <div class="d-flex justify-content-between border rounded">
+                                                            <input type="email" class="border-0 form-control focus-none"
+                                                                placeholder="username@example.com">
+                                                            <div class="my-auto">
+                                                                <img src="assets/imgaes/mail.png" class="w-auto me-3"
+                                                                    alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="#email"
+                                                            class="mb-2 text-black fw-700">Password</label>
+                                                        <div class="d-flex justify-content-between border rounded">
+                                                            <input type="password"
+                                                                class="border-0 form-control focus-none"
+                                                                placeholder="must be 8 digits">
+                                                            <div class="my-auto">
+                                                                <img src="assets/imgaes/lock.png" class="w-auto me-3"
+                                                                    alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="text-end mb-3">
+                                                        <button
+                                                            class="btn outline-none fw-700 text-decoration-underline"
+                                                            data-bs-toggle="modal" data-bs-target="#fourthModal">Forgot
+                                                            Password</button>
+                                                    </div>
+                                                    <div>
+                                                        <button
+                                                            class="btn w-100 my-btn-blue text-white fw-700 mb-3">Login
+                                                            to Continue</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Third Modal -->
+                            <div class="modal fade" id="thirdModal" tabindex="-1" aria-labelledby="secondModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="fw-bold text-black" id="firstModalLabel">Welcome to Tenderely
+                                            </h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="d-flex justify-content-between">
+                                                <div>
+                                                    <img src="assets/imgaes/logo-circle.png" class="w-auto h-auto"
+                                                        alt="">
+                                                </div>
+                                                <div>
+                                                    <button class="btn my-btn-2" data-bs-toggle="modal"
+                                                        data-bs-target="#secondModal">Sign In</button>
+                                                </div>
+                                            </div>
+                                            <div class="container">
+                                                <div class="text-center">
+                                                    <h2 class="mb-3 fw-bold">Register an Account</h2>
+                                                    <p>Access your account by entering your credentials.</p>
+                                                </div>
+                                                <div class="mt-5">
+                                                    <div class="mb-3">
+                                                        <label for="#name" class="mb-2 text-black fw-700">Full
+                                                            Name</label>
+                                                        <input type="text" id="name" class="form-control"
+                                                            placeholder="John Darry">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="#email" class="mb-2 text-black fw-700">Email
+                                                            Address</label>
+                                                        <div class="d-flex justify-content-between border rounded">
+                                                            <input type="email" class="border-0 form-control focus-none"
+                                                                placeholder="username@example.com">
+                                                            <div class="my-auto">
+                                                                <img src="assets/imgaes/mail.png" class="w-auto me-3"
+                                                                    alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="#number" class="mb-2 text-black fw-700">Contact
+                                                            Number</label>
+                                                        <input type="number" id="name" class="form-control"
+                                                            placeholder="+76 6383 673873">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="#email"
+                                                            class="mb-2 text-black fw-700">Password</label>
+                                                        <div class="d-flex justify-content-between border rounded">
+                                                            <input type="password"
+                                                                class="border-0 form-control focus-none"
+                                                                placeholder="**********">
+                                                            <div class="my-auto">
+                                                                <img src="assets/imgaes/lock.png" class="w-auto me-3"
+                                                                    alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="#email" class="mb-2 text-black fw-700">Confirm
+                                                            Password</label>
+                                                        <div class="d-flex justify-content-between border rounded">
+                                                            <input type="password"
+                                                                class="border-0 form-control focus-none"
+                                                                placeholder="**********">
+                                                            <div class="my-auto">
+                                                                <img src="assets/imgaes/lock.png" class="w-auto me-3"
+                                                                    alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mt-5">
+                                                        <button
+                                                            class="btn w-100 my-btn-blue text-white fw-700 mb-3">Register
+                                                            an account</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Fourth Modal -->
+                            <div class="modal fade" id="fourthModal" tabindex="-1" aria-labelledby="secondModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="fw-bold text-black" id="firstModalLabel">Welcome to Tenderely
+                                            </h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="d-flex justify-content-between">
+                                                <div>
+                                                    <img src="assets/imgaes/logo-circle.png" class="w-auto h-auto"
+                                                        alt="">
+                                                </div>
+                                                <div>
+                                                    <button class="btn my-btn-2" data-bs-toggle="modal"
+                                                        data-bs-target="#secondModal">Back</button>
+                                                </div>
+                                            </div>
+                                            <div class="container">
+                                                <div class="text-center">
+                                                    <h2 class="mb-3 fw-bold">Forgot Password</h2>
+                                                    <p>Enter your email to reset the password again.</p>
+                                                </div>
+                                                <div class="mt-5">
+                                                    <div class="mb-3">
+                                                        <label for="#email" class="mb-2 text-black fw-700">Email
+                                                            Address</label>
+                                                        <div class="d-flex justify-content-between border rounded">
+                                                            <input type="email" class="border-0 form-control focus-none"
+                                                                placeholder="username@example.com">
+                                                            <div class="my-auto">
+                                                                <img src="assets/imgaes/mail.png" class="w-auto me-3"
+                                                                    alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mt-5">
+                                                        <button class="btn w-100 my-btn-blue text-white fw-700 mb-3"
+                                                            data-bs-toggle="modal"
+                                                            data-bs-target="#fifthModal">Send</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Fifth Modal -->
+                            <div class="modal fade" id="fifthModal" tabindex="-1" aria-labelledby="secondModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="fw-bold text-black" id="firstModalLabel">Welcome to Tenderely
+                                            </h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="d-flex justify-content-between">
+                                                <div>
+                                                    <img src="assets/imgaes/logo-circle.png" class="w-auto h-auto"
+                                                        alt="">
+                                                </div>
+                                                <div>
+                                                    <button class="btn my-btn-2" data-bs-toggle="modal"
+                                                        data-bs-target="#fourthModal">Back</button>
+                                                </div>
+                                            </div>
+                                            <div class="container">
+                                                <div class="text-center">
+                                                    <h2 class="mb-3 fw-bold">Verification Code</h2>
+                                                    <p>Enter the 4 digit code which has been sent to your email.</p>
+                                                </div>
+                                                <div class="mt-5">
+                                                    <div class="container mb-5">
+                                                        <div class="row justify-content-center">
+                                                            <div class="col-md-6">
+                                                                <form>
+                                                                    <div class="verification-code-input">
+                                                                        <input type="text" class="form-control"
+                                                                            maxlength="1" required>
+                                                                        <input type="text" class="form-control"
+                                                                            maxlength="1" required>
+                                                                        <input type="text" class="form-control"
+                                                                            maxlength="1" required>
+                                                                        <input type="text" class="form-control"
+                                                                            maxlength="1" required>
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mt-5">
+                                                        <button class="btn w-100 my-btn-blue text-white fw-700 mb-3"
+                                                            data-bs-toggle="modal"
+                                                            data-bs-target="#sixthModal">Verify</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Sixth Modal -->
+                            <div class="modal fade" id="sixthModal" tabindex="-1" aria-labelledby="secondModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="fw-bold text-black" id="firstModalLabel">Welcome to Tenderely
+                                            </h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="d-flex justify-content-between">
+                                                <div>
+                                                    <img src="assets/imgaes/logo-circle.png" class="w-auto h-auto"
+                                                        alt="">
+                                                </div>
+                                                <div>
+                                                    <button class="btn my-btn-2" data-bs-toggle="modal"
+                                                        data-bs-target="#fifthModal">Back</button>
+                                                </div>
+                                            </div>
+                                            <div class="container">
+                                                <div class="text-center">
+                                                    <h2 class="mb-3 fw-bold">Reset Password</h2>
+                                                    <p>Enter your new password to reset it to access your account.</p>
+                                                </div>
+                                                <div class="mt-5">
+                                                    <div class="mb-3">
+                                                        <label for="#email"
+                                                            class="mb-2 text-black fw-700">Password</label>
+                                                        <div class="d-flex justify-content-between border rounded">
+                                                            <input type="password"
+                                                                class="border-0 form-control focus-none"
+                                                                placeholder="**********">
+                                                            <div class="my-auto">
+                                                                <img src="assets/imgaes/lock.png" class="w-auto me-3"
+                                                                    alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="#email" class="mb-2 text-black fw-700">Confirm
+                                                            Password</label>
+                                                        <div class="d-flex justify-content-between border rounded">
+                                                            <input type="password"
+                                                                class="border-0 form-control focus-none"
+                                                                placeholder="**********">
+                                                            <div class="my-auto">
+                                                                <img src="assets/imgaes/lock.png" class="w-auto me-3"
+                                                                    alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mt-5">
+                                                        <button
+                                                            class="btn w-100 my-btn-blue text-white fw-700 mb-3">Reset
+                                                            Password</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="d-block d-lg-none">
+        <ul class="d-flex list-style-none bottom-adj">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">
+                    <img src="assets/imgaes/nav-link-1.png" class="w-auto" alt="">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="services.html">
+                    <img src="assets/imgaes/arrow-down-up.png" class="w-auto" alt="">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <img src="assets/imgaes/Document-Add-3.png" class="w-auto" alt="">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <img src="assets/imgaes/doc-align-right.png" class="w-auto" alt="">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <img src="assets/imgaes/user-2.png" class="w-auto" alt="">
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- navbar end -->
+
+    <!-- main content start -->
+    <section class="my-5 mt-10">
+        <div class="container">
+            <div class="d-lg-flex justify-content-between">
+                <div class="align-items-end">
+                    <h3 class="fw-bold">Create Project</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing industry.</p>
+                </div>
+                <div class="d-flex align-items-center">
+                    <button class="btn btn-lg btn-outline-secondary ps-5 pe-5 pt-3 pb-3 border-rad">
+                        <small>Back</small>
+                    </button>
+                </div>
+            </div>
+            <div class="my-5 row">
+                <h4 class="fw-bold mb-3">Add Media/ Photos</h4>
+                <div class="grid-2 d-flex align-items-center">
+                    <div>
+                        <div>
+                            <img src="assets/imgaes/empty-image-2.png" class="w-auto" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <button class="btn box-shadow-none focus-none">
+                            <img src="assets/imgaes/add-image.png" class="w-auto" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-4">
+                <label for="exampleInputEmail1" class="form-label fw-bold">Offer Title</label>
+                <input type="text" class="form-control p-3" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="Add your offer title">
+            </div>
+            <div class="mb-4">
+                <label class="form-label fw-bold">Offer Description</label>
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                        style="height: 150px"></textarea>
+                    <label for="floatingTextarea2">About Offer description</label>
+                </div>
+            </div>
+            <div class="mb-4">
+                <label for="exampleInputEmail1" class="form-label fw-bold">Add Document</label>
+                <input type="file" class="form-control p-3" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="Add your offer title">
+            </div>
+            <div class="my-5">
+                <div class="alert alert-primary d-flex align-items-center gap-3 fw-bold" role="alert">
+                    <div class="w-max ps-5 pe-5 pt-3 pb-3 text-white rounded bg-black">Note</div>
+                    Delivery once with “One delivery” or use “Milestones“ to delivery steps for more complex offers.
+                </div>
+            </div>
+            <!-- tabs start -->
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <div class="my-4 grid-2-cols">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                            aria-selected="true">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    <h4 class="text-black"><span class="fw-bold">One Delivery :</span> Deliver a
+                                        finished
+                                        offer</h4>
+                                </label>
+                            </div>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                            aria-selected="false">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    <h4 class="text-black"><span class="fw-bold">Milestones :</span> Deliver gradually
+                                        in
+                                        steps</h4>
+                                </label>
+                            </div>
+                        </button>
+                    </li>
+                </div>
+            </ul>
+            <!-- tabs end -->
+
+            <div class="tab-content" id="pills-tabContent">
+                <!-- 1 -->
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                    <div class="my-5">
+                        <ul class="list-group">
+                            <li class="list-group-item p-4 d-flex justify-content-between">
+                                <div>Currency</div>
+                                <div class="w-25">
+                                    <select class="form-select p-2 bg-light-brown border-0"
+                                        aria-label="Default select example">
+                                        <option selected>USD</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                            </li>
+                            <li class="list-group-item p-4 d-flex justify-content-between">
+                                <div>Total Offer Amount</div>
+                                <div class="w-25">
+                                    <select class="form-select p-2 bg-light-brown border-0"
+                                        aria-label="Default select example">
+                                        <option selected>$ 50</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                            </li>
+                            <li class="list-group-item p-4 d-flex justify-content-between">
+                                <div>Delivery Time</div>
+                                <div class="w-25">
+                                    <select class="form-select p-2 bg-light-brown border-0"
+                                        aria-label="Default select example">
+                                        <option selected>2 Days</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    <div class="card">
+                        <div class="card-title d-lg-flex justify-content-between align-items-center p-3">
+                            <h4 class="fw-bold">Milestones</h4>
+                            <button class="btn box-shadow-none focus-none text-blue fw-bold"><img
+                                    src="assets/imgaes/plus-circle.png" class="w-auto" alt=""> Add a Milestone</button>
+                        </div>
+                        <div class="card-body bg-light-brown">
+                            <ul class="list-group border-0 bg-light-brown">
+                                <li class="list-group-item bg-light-brown border-0 p-4 d-flex justify-content-between">
+                                    <div>1st Milestone</div>
+                                    <div class="w-25">
+                                        <select class="form-select p-2 border-0" aria-label="Default select example">
+                                            <option selected>Name the milestone</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                </li>
+                                <li class="list-group-item bg-light-brown border-0 p-4 d-flex justify-content-between">
+                                    <div>Duration</div>
+                                    <div class="w-25">
+                                        <select class="form-select p-2 border-0" aria-label="Default select example">
+                                            <option selected>2 Days</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                </li>
+                                <li class="list-group-item bg-light-brown border-0 p-4 d-flex justify-content-between">
+                                    <div>Currency</div>
+                                    <div class="w-25">
+                                        <select class="form-select p-2 border-0" aria-label="Default select example">
+                                            <option selected>USD</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                </li>
+                                <li class="list-group-item bg-light-brown border-0 p-4 d-flex justify-content-between">
+                                    <div>Price</div>
+                                    <div class="w-25">
+                                        <select class="form-select p-2 border-0" aria-label="Default select example">
+                                            <option selected>$ 200.00</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-body bg-light-brown my-4">
+                            <ul class="list-group border-0 bg-light-brown">
+                                <li class="list-group-item bg-light-brown border-0 p-4 d-flex justify-content-between">
+                                    <div>1st Milestone</div>
+                                    <div class="w-25">
+                                        <select class="form-select p-2 border-0" aria-label="Default select example">
+                                            <option selected>Name the milestone</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                </li>
+                                <li class="list-group-item bg-light-brown border-0 p-4 d-flex justify-content-between">
+                                    <div>Duration</div>
+                                    <div class="w-25">
+                                        <select class="form-select p-2 border-0" aria-label="Default select example">
+                                            <option selected>2 Days</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                </li>
+                                <li class="list-group-item bg-light-brown border-0 p-4 d-flex justify-content-between">
+                                    <div>Currency</div>
+                                    <div class="w-25">
+                                        <select class="form-select p-2 border-0" aria-label="Default select example">
+                                            <option selected>USD</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                </li>
+                                <li class="list-group-item bg-light-brown border-0 p-4 d-flex justify-content-between">
+                                    <div>Price</div>
+                                    <div class="w-25">
+                                        <select class="form-select p-2 border-0" aria-label="Default select example">
+                                            <option selected>$ 200.00</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="my-5">
+                        <div class="alert alert-primary d-flex align-items-center gap-3 fw-bold" role="alert">
+                            <div class="w-max ps-5 pe-5 pt-3 pb-3 text-white rounded bg-black">Note</div>
+                            Payments for delivered Milestones will be available after the entire order completed or in
+                            case the
+                            Buyer decides
+                            not to continue to the next Milestone.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="my-4">
+                <button class="bg-white border-rad text-blue fw-bold ps-5 pe-5 pt-3 pb-3 border-2-blue" data-bs-toggle="modal" data-bs-target="#addContact"><img
+                        src="assets/imgaes/user-plus-2.png" class="w-auto" alt="">
+                    Add Job Owner
+                </button>
+
+                <!-- add contacts start -->
+                <div class="modal fade" id="addContact" tabindex="-1"
+                aria-labelledby="addContactLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="addContactLabel">Add Contacts</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form class="d-flex shadow border-rad ps-2 pe-2 p-3">
+                                <div class="me-4 my-auto">
+                                    <img src="assets/imgaes/search-black.png" class="w-auto"
+                                        alt="">
+                                </div>
+                                <input class="form-control border-0 box-shadow-0 me-2"
+                                    type="search" placeholder="Search by name"
+                                    aria-label="Search">
+                            </form>
+                            <div class="mt-4">
+                                <hr>
+                                <div
+                                    class="py-2 d-lg-flex justify-content-between text-center text-lg-start">
+                                    <div class="d-lg-flex justify-content-between">
+                                        <div class="me-2">
+                                            <img src="assets/imgaes/annette-black.png"
+                                                class="w-auto" alt="">
+                                        </div>
+                                        <div class="my-auto me-2">
+                                            <p class="fw-bold pb-0 pb-lg-2">Annette Black</p>
+                                            <small>Pizza Hut</small>
+                                        </div>
+                                        <div class="mt-2">
+                                            <button class="btn btn-outline-secondary fw-bold border-black border-rad pe-3 ps-3 pt-0 pb-0">
+                                                Level 1
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="my-auto text-gray mt-2 mt-lg-0 fw-bold">
+                                        Added
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <hr>
+                                <div
+                                    class="py-2 d-lg-flex justify-content-between text-center text-lg-start">
+                                    <div class="d-lg-flex justify-content-between">
+                                        <div class="me-2">
+                                            <img src="assets/imgaes/user-prof.png"
+                                                class="w-auto" alt="">
+                                        </div>
+                                        <div class="my-auto me-2">
+                                            <p class="fw-bold pb-0 pb-lg-2">Floyd Miles</p>
+                                            <small>Starbucks</small>
+                                        </div>
+                                    </div>
+                                    <button
+                                        class="btn box-shadow-none my-auto text-blue fw-bold mt-2 mt-lg-0">
+                                        Add
+                                    </button>
+                                </div>
+                            </div>
+                            <div>
+                                <hr>
+                                <div
+                                    class="py-2 d-lg-flex justify-content-between text-center text-lg-start">
+                                    <div class="d-lg-flex justify-content-between">
+                                        <div class="me-2">
+                                            <img src="assets/imgaes/jerome-bell.png"
+                                                class="w-auto" alt="">
+                                        </div>
+                                        <div class="my-auto me-2">
+                                            <p class="fw-bold pb-0 pb-lg-2">Jerome Bell</p>
+                                            <small>Louis Vuitton</small>
+                                        </div>
+                                    </div>
+                                    <button
+                                        class="btn box-shadow-none my-auto text-blue fw-bold mt-2 mt-lg-0">
+                                        Add
+                                    </button>
+                                </div>
+                            </div>
+                            <div>
+                                <hr>
+                                <div
+                                    class="py-2 d-lg-flex justify-content-between text-center text-lg-start">
+                                    <div class="d-lg-flex justify-content-between">
+                                        <div class="me-2">
+                                            <img src="assets/imgaes/jane-copper.png"
+                                                class="w-auto" alt="">
+                                        </div>
+                                        <div class="my-auto me-2">
+                                            <p class="fw-bold pb-0 pb-lg-2">Jane Cooper</p>
+                                            <small>Gillette</small>
+                                        </div>
+                                        <div class="mt-2">
+                                            <button
+                                                class="btn btn-outline-secondary fw-bold border-black border-rad pe-3 ps-3 pt-0 pb-0">Level
+                                                1</button>
+                                        </div>
+                                    </div>
+                                    <div class="my-auto text-gray fw-bold mt-2 mt-lg-0">
+                                        Added
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <hr>
+                                <div
+                                    class="py-2 d-lg-flex justify-content-between text-center text-lg-start">
+                                    <div class="d-lg-flex justify-content-between">
+                                        <div class="me-2">
+                                            <img src="assets/imgaes/arlene-mccoy.png"
+                                                class="w-auto" alt="">
+                                        </div>
+                                        <div class="my-auto me-2">
+                                            <p class="fw-bold pb-0 pb-lg-2">Arlene McCoy</p>
+                                            <small>Louis Vuitton</small>
+                                        </div>
+                                        <div class="mt-2">
+                                            <button
+                                                class="btn btn-outline-secondary fw-bold border-black border-rad pe-3 ps-3 pt-0 pb-0">Level
+                                                1</button>
+                                        </div>
+                                    </div>
+                                    <button
+                                        class="btn box-shadow-none my-auto text-blue fw-bold mt-2 mt-lg-0">
+                                        Add
+                                    </button>
+                                </div>
+                            </div>
+                            <div>
+                                <hr>
+                                <div
+                                    class="py-2 d-lg-flex justify-content-between text-center text-lg-start">
+                                    <div class="d-lg-flex justify-content-between">
+                                        <div class="me-2">
+                                            <img src="assets/imgaes/darrel.png" class="w-auto"
+                                                alt="">
+                                        </div>
+                                        <div class="my-auto me-2">
+                                            <p class="fw-bold pb-0 pb-lg-2">Darrell Steward</p>
+                                            <small>The Walt Disney Company</small>
+                                        </div>
+                                    </div>
+                                    <button
+                                        class="btn box-shadow-none my-auto text-blue fw-bold mt-2 mt-lg-0">
+                                        Add
+                                    </button>
+                                </div>
+                            </div>
+                            <div>
+                                <hr>
+                                <div
+                                    class="py-2 d-lg-flex justify-content-between text-center text-lg-start">
+                                    <div class="d-lg-flex justify-content-between">
+                                        <div class="me-2">
+                                            <img src="assets/imgaes/courtney.png" class="w-auto"
+                                                alt="">
+                                        </div>
+                                        <div class="my-auto me-2">
+                                            <p class="fw-bold pb-0 pb-lg-2">Courtney Henry</p>
+                                            <small>eBay</small>
+                                        </div>
+                                    </div>
+                                    <div class="my-auto text-gray fw-bold mt-2 mt-lg-0">
+                                        Added
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <hr>
+                                <div
+                                    class="py-2 d-lg-flex justify-content-between text-center text-lg-start">
+                                    <div class="d-lg-flex justify-content-between">
+                                        <div class="me-2">
+                                            <img src="assets/imgaes/kathryn.png" class="w-auto"
+                                                alt="">
+                                        </div>
+                                        <div class="my-auto me-2">
+                                            <p class="fw-bold pb-0 pb-lg-2">Kathryn Murphy</p>
+                                            <small>IBM</small>
+                                        </div>
+                                    </div>
+                                    <button
+                                        class="btn box-shadow-none my-auto text-blue fw-bold mt-2 mt-lg-0">
+                                        Add
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- add contacts end -->
+
+
+            </div>
+            <div class="my-3 text-end">
+                <button class="btn bg-blue text-white ps-5 pe-5 pt-3 pb-3">Send</button>
+            </div>
+        </div>
+    </section>
+    <!-- main content end -->
+
+</body>
+
+</html>
+<!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- JS -->
+<script src="./assets/js/script.js"></script>
+<!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
